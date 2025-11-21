@@ -1,16 +1,8 @@
 def moving_average(values, window_size):
     """Return a moving average over a list of floats.
     """
-    if len(values) < window_size:
-        return []
     
-    moving_averages = []
-    for i in range(len(values) - window_size + 1):
-        window = values[i:i + window_size]
-        avg = sum(window) / window_size
-        moving_averages.append(avg)
-    
-    return moving_averages
+    return values
     
 
 def is_prime(n: int) -> bool:
